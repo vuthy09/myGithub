@@ -1,0 +1,381 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* main section */
+#main-section{
+    background: linear-gradient(to bottom,rgba(0,0,0,.5) 10%,rgba(0,0,0,.8) 100%), url("./image/city2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+/* header */
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.menu{
+    display: flex;
+    margin-right: 3rem;
+}
+.menu a{
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 0.1rem;
+}
+
+.menu a .btn{
+    transition: all .3s ease-out;
+}
+
+.menu a:hover .btn{
+    transform: translateY(-0.2rem);
+    color: #01d8cd;
+}
+
+.btn{
+    margin-left: 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+#logo{
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 1rem 3rem;
+}
+
+#logo a{
+    text-decoration: none;
+    color: #ddd;
+    letter-spacing: .2rem;
+}
+/* end of header */
+
+/* body section */
+.container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10rem;
+}
+
+.container-img img{
+    width: 350px;
+    height: 350px;
+    border: 10px solid;
+    border-color: rgba(1,216,205, 0.2);
+    border-radius: 50%;
+    transition: opacity .3s;
+}
+
+.container-img{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 50%;
+    padding-right: 3rem;
+}
+.container-img img:hover{
+    opacity: .7;
+    cursor: pointer;
+}
+
+.container-text{
+    flex: 50%;
+    align-items:center;
+    margin-top: 2.5rem;
+}
+
+.welcome-text{
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    letter-spacing: .15rem;
+    margin-bottom: .3rem;
+}
+.info-text{
+    color: white;
+    font-size: 1.18rem;
+    line-height: 2rem;
+    margin-bottom: 3rem;
+}
+
+.container-title{
+    display: flex;
+    align-items: baseline;
+}
+.container-title .static-text{
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.container-title .dynamic-text{
+    margin-left: 1rem;
+    height: 5rem;
+    line-height: 5rem;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+.dynamic-text li{
+    list-style: none;
+    color: #01d8cd;
+    font-size: 3rem;
+    font-weight: 600;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide{
+    100%{
+        top: -20rem;
+    }
+}
+
+.dynamic-text li span{
+    position: relative;
+    margin: 6rem 0;
+    line-height: 5rem;
+}
+
+.about-btn{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #01d8cd;
+    text-transform: uppercase;
+    margin-right: 2.5rem;
+    border: 1.5px solid #01d8cd;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    transition: all .3s;
+}
+
+.about-btn:hover{
+    background:#01d8cd;
+    color: white;
+}
+/* end of body section */
+/* end of main section */
+
+/* contact section */
+.contact-form{
+    background: url("./image/fern.jpg") center/cover no-repeat fixed;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form h1{
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+input[type="email"]{
+    margin: 0;
+    background: none;
+    padding: .3rem 1rem;
+    outline: none;
+    border: 2px solid #01d8cd;
+    width: 15rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+input[type="email"]::placeholder{
+    font-size: .9rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.contact-form form{
+    display: flex;
+    margin: 0 auto;
+    width: 80vw;
+    justify-content: center;
+}
+.contact-btn{
+    padding: .3rem 1rem;
+    background: none;
+    outline: none; 
+    border: 2px solid #01d8cd;
+    border-left: none;
+    text-transform: capitalize;
+    color: #01d8cd;
+    transition: all .3s ease-out;
+}
+
+.contact-btn:hover{
+    background: #01d8cd;
+    color: #fff;
+    cursor: pointer;
+}
+/* end of contact section */
+
+/* footer section */
+.footer{
+    background:#2d3333;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright{
+    color: white;
+    font-size: 1rem;
+}
+
+.copyright i{
+    color: crimson;
+}
+
+.footer-menu{
+    padding: 0 1rem;
+}
+
+.footer-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 0 .3rem;
+    transition: color .3s;
+}
+
+.footer-menu a:hover{
+    color:#01d8cd;
+}
+
+.social-media{
+    padding: 0 3rem 0 0;
+}
+
+.social-media a{
+    font-size: 1.5rem;
+    padding-right: .6rem;
+    color:#01d8cd;
+    transition: color .3s;
+}
+
+.social-media a:nth-of-type(1):hover{
+    color: #3b5998;
+}
+.social-media a:nth-of-type(2):hover{
+    color: #00acee;
+}
+.social-media a:nth-of-type(3):hover{
+    color:  #c4302b
+}
+.social-media a:nth-of-type(4):hover{
+    color: #DD2A7B
+}
+/* end of footer section */
+
+/* responsive */
+@media screen and (max-width:768px) {
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu{
+        margin: 0;
+    }
+    .menu .btn{
+        font-size: .7rem;
+    }
+    .about-btn{
+        font-size: 1rem;
+        padding: .7rem 1.2rem;
+    }
+
+    .contact-form h1{
+        font-size: 1.2rem;
+    }
+    input[type="email"]{
+        width: 12rem;
+        font-size: .7rem;
+    }
+    input[type="email"]::placeholder{
+        font-size: .7rem;
+    }
+
+    .contact-btn{
+        padding: .2rem .5rem;
+        font-size: .7rem;
+        text-transform: uppercase;
+    }
+
+    .container-img img{
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width:992px) {
+    
+   .container-img{
+        display: none;
+    }
+ 
+    .container-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        margin-top: -3rem;
+    }
+
+    .welcome-text{
+        font-size: 1rem;
+    }
+    .container-title .static-text,
+    .container-title .dynamic-text li{
+        font-size: 2rem;
+        text-align:center;
+    }
+
+    .info-text{
+        font-size: 1rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .footer{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 20vh;
+    }
+
+    .footer-menu a, .copyright p, .social-media{
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width:556px) {
+    .about-btn{
+        font-size: .7rem;
+        padding: .5rem 1rem;
+    }
+    .personal-news{
+        margin-top: -1rem;
+    }
+    .footer-menu a, .copyright p, .social-media{
+        font-size: .6rem;
+    }
+}
+/* end of responsive */
