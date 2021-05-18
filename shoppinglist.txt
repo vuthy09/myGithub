@@ -1,0 +1,7 @@
+shopping:
+
+Apples
+Oranges
+Bananas
+Water
+Bread
